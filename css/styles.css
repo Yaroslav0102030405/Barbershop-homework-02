@@ -1,0 +1,193 @@
+/* open-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v34-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/open-sans-v34-latin_cyrillic-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/open-sans-v34-latin_cyrillic-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/open-sans-v34-latin_cyrillic-regular.woff") format("woff"),
+    /* Modern Browsers */
+      url("../fonts/open-sans-v34-latin_cyrillic-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/open-sans-v34-latin_cyrillic-regular.svg#OpenSans")
+      format("svg"); /* Legacy iOS */
+}
+/* open-sans-600 - latin_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/open-sans-v34-latin_cyrillic-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/open-sans-v34-latin_cyrillic-600.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/open-sans-v34-latin_cyrillic-600.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/open-sans-v34-latin_cyrillic-600.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/open-sans-v34-latin_cyrillic-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/open-sans-v34-latin_cyrillic-600.svg#OpenSans")
+      format("svg"); /* Legacy iOS */
+}
+/* open-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/open-sans-v34-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/open-sans-v34-latin_cyrillic-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/open-sans-v34-latin_cyrillic-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/open-sans-v34-latin_cyrillic-700.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/open-sans-v34-latin_cyrillic-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/open-sans-v34-latin_cyrillic-700.svg#OpenSans")
+      format("svg"); /* Legacy iOS */
+}
+
+:root {
+  --main-text-cl: #555555;
+  --accent-cl: #ff6c00;
+  --black: #303030;
+  --gray: #9da4bd;
+  --white: #ffffff;
+  --dark-bg: #191c26;
+  --gray-bg: #f7f7f7;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  
+  color: var(--main-text-cl)
+}
+
+address {
+font-style: normal;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+color: var(--accent-cl);
+}
+
+.list {
+list-style: none;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  /* убрать фон на кнопе и сделать его прозрачным */
+  background-color: transparent;
+
+color: var(--black)
+}
+
+.menu-link {
+font-weight: 600;
+font-size: 12px;
+line-height: 1.333;
+letter-spacing: 0.1em;
+
+color: var(--white)
+}
+
+.social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  
+  color: var(--black)
+}
+
+.hero-title {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  
+  /* color: var(--white) */
+  
+}
+
+.section-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+
+  /* color: var(--white) */
+}
+
+.section-label {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  
+  color: var(--black);
+}
+
+.item-title {
+  line-height: 1.389;
+  
+  color: var(--black)
+}
+
+.team-item {
+  text-align: center;
+}
+
+.team-position {
+  font-size: 14px;
+  line-height: 1.357;
+  
+  color: var(--accent-cl)
+}
+
+.copiright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  
+  color: var(--gray)
+}
+
+/* добавить фон секциям */
+.dark-bg {
+background-color: var(--dark-bg);
+}
+
+.dark-bg .hero-title,
+.dark-bg .section-title {
+color: var(--white);
+}
